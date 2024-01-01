@@ -1,0 +1,123 @@
+:root {
+    /* COLORS */
+    /* Primary */
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    /* Neutral */
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+
+    /* FONTS */
+    --ff-base: 'Poppins', sans-serif;
+    --fw-extraLight: 200;
+    --fw-regular: 400;
+    --fw-semiBold: 600;
+
+    --fs-base: .9375rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--ff-base);
+    font-size: var(--fs-base);
+    font-weight: var(--fw-regular);
+    color: var(--Grayish-Blue);
+}
+
+body {
+    margin: 0;
+    margin-block-start: 4rem;
+    line-height: 1.5;
+    background-color: var(--Very-Light-Gray);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: var(--Very-Dark-Blue);
+}
+
+h3 {
+    font-weight: var(--fw-semiBold);
+    color: var(--Very-Dark-Blue);
+}
+
+h1, h3 {
+    margin: 0;
+    line-height: 1.3;
+}
+
+.wrapper {
+    margin-inline: auto;
+    width: min(100% - 1.8rem, 69rem);
+}
+
+.wrapper--narrow {
+    margin-inline: auto;
+    width: min(100% - 1.8rem, 32rem);
+}
+
+.accent {
+    font-weight: var(--fw-semiBold);
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-weight: var(--fw-extraLight);
+}
+
+.container-flex {
+    --gap: 1.8rem;
+    margin-block: 3.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.col:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.card {
+    padding: 1.8rem;
+    border-radius: .55rem;
+    box-shadow: 0 .4rem .7rem -.1rem rgba(0, 0, 0, .1);
+}
+
+.card p {
+    font-size: .9rem;
+}
+
+.card img {
+    margin-block-start: 2.7rem;
+    margin-inline-start: auto;
+}
+
+@media(min-width: 40.625em) {
+    .container-flex {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .container-flex > * {
+        flex-basis: 100%;
+    }
+}
