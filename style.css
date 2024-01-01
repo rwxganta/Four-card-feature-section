@@ -74,6 +74,7 @@ h1, h3 {
     font-weight: var(--fw-semiBold);
 }
 
+
 header {
     text-align: center;
 }
@@ -100,6 +101,7 @@ header h1 {
     padding: 1.8rem;
     border-radius: .55rem;
     box-shadow: 0 .4rem .7rem -.1rem rgba(0, 0, 0, .1);
+    border-top: 4px solid;
 }
 
 .card p {
@@ -109,6 +111,22 @@ header h1 {
 .card img {
     margin-block-start: 2.7rem;
     margin-inline-start: auto;
+}
+
+.border-red {
+    border-top-color: hsl(0.4, 78.24%, 62.16%);
+}
+
+.border-ceal {
+    border-top-color: hsl(180, 60%, 54.9%);
+}
+
+.border-blue {
+    border-top-color: hsl(211.95, 81.91%, 63.14%);
+}
+
+.border-orange {
+    border-top-color: hsl(33.41, 95.65%, 63.92%);
 }
 
 @media(min-width: 40.625em) {
